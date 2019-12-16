@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
-import MyNavbar from "./components/MyNavbar";
+import MyNavbar from "./components/navbar";
+import TopContent from "./components/top-content";
 
 function App() {
   return (
     <div className="App">
-      <MyNavbar />
+      <header className="App-header">
+        <MyNavbar />
+        <TopContent />
+      </header>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
