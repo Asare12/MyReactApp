@@ -24,6 +24,23 @@
 .App-link {
   color: #61dafb;
 }
+.about{
+  background-color: #2b2b2b;
+  height: 30em;
+}
+
+hr.divider-xx{
+  border: 0;
+  height: 55px;
+  background: url(./images/divider-xx.png) center no-repeat;
+  background-size: 50px;
+}
+hr.divider-x{
+  border: 0;
+  height: 25px;
+  background: url(./images/divider-x.png) center no-repeat;
+  background-size: 15px;
+}
 
 @keyframes App-logo-spin {
   from {
