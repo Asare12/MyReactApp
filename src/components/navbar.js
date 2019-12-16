@@ -21,6 +21,12 @@ export default class MyNavbar extends React.Component {
             </Nav.Item>
 
             <Nav.Item>
+              <Nav.Link href="#service" className="custom-nav-link">
+                Service
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
               <Nav.Link href="#team" className="custom-nav-link">
                 Team
               </Nav.Link>

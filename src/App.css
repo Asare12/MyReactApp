@@ -29,6 +29,21 @@
   height: 30em;
 }
 
+.service{
+  background:linear-gradient(
+    rgba(0, 0, 0,0.8), 
+    rgba(0, 0, 0,0.8)
+  ), url(./images/gym-background.jpg) center no-repeat;
+  background-size: cover;
+  padding: 7em;
+}
+
+.heading{
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 5px solid #f2503e;
+}
+
 hr.divider-xx{
   border: 0;
   height: 55px;
