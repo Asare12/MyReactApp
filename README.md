@@ -4,10 +4,10 @@ Our Gym is a one page responsive designed specially for gym and fitness. It is d
 ### Prerequisites
 ```
 To run this project follow these steps:
-*clone the repo using git clone
-*navigate to folder MyReactApp
-*run npm install to instal node modules
-*run npm start to start the service on localhost:3000
+clone the repo using git clone
+navigate to folder MyReactApp
+run npm install to instal node modules
+run npm start to start the service on localhost:3000
 ```
 
 ## Built With
