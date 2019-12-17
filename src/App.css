@@ -24,37 +24,81 @@
 .App-link {
   color: #61dafb;
 }
-.about{
+.about {
   background-color: #2b2b2b;
   height: 30em;
 }
 
-.service{
-  background:linear-gradient(
-    rgba(0, 0, 0,0.8), 
-    rgba(0, 0, 0,0.8)
-  ), url(./images/gym-background.jpg) center no-repeat;
+.service {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/gym-background.jpg) center no-repeat;
   background-size: cover;
   padding: 7em;
 }
+.team {
+  background-color: #2b2b2b;
+  padding: 7em;
+}
 
-.heading{
+.heading {
   font-size: 40px;
   font-weight: bold;
   border-bottom: 5px solid #f2503e;
 }
+.card-body {
+  background-color: #373c3f;
+}
 
-hr.divider-xx{
+hr.divider-xx {
   border: 0;
   height: 55px;
   background: url(./images/divider-xx.png) center no-repeat;
   background-size: 50px;
 }
-hr.divider-x{
+hr.divider-x {
   border: 0;
   height: 25px;
   background: url(./images/divider-x.png) center no-repeat;
   background-size: 15px;
+}
+span {
+  color: #f2503e;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+.fa:hover {
+  color: white;
+  border: 1px white solid;
+  background-color: #f2503e;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fa-facebook {
+  background: transparent;
+  color: #f2503e;
+  border: 1px #f2503e solid;
+  border-radius: 4px;
+}
+.fa-twitter {
+  background: transparent;
+  color: #f2503e;
+  border: 1px #f2503e solid;
+  border-radius: 4px;
+}
+.fa-instagram {
+  background: transparent;
+  color: #f2503e;
+  border: 1px #f2503e solid;
+  border-radius: 4px;
 }
 
 @keyframes App-logo-spin {
