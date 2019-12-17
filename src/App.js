@@ -6,6 +6,7 @@ import About from "./components/about";
 import Service from "./components/service";
 import Team from "./components/team";
 import Membership from "./components/membership";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
       </div>
       <div className="membership">
         <Membership />
+      </div>
+      <div className="contact">
+        <Contact />
       </div>
     </div>
   );
