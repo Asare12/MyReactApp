@@ -5,6 +5,7 @@ import TopContent from "./components/top-content";
 import About from "./components/about";
 import Service from "./components/service";
 import Team from "./components/team";
+import Membership from "./components/membership";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       </div>
       <div className="team">
         <Team />
+      </div>
+      <div className="membership">
+        <Membership />
       </div>
     </div>
   );
