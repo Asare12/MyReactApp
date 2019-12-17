@@ -82,14 +82,6 @@ span {
   text-decoration: none;
   margin: 5px;
 }
-.fa:hover {
-  color: white;
-  border: 1px white solid;
-  background-color: #f2503e;
-  border: 1px solid transparent;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 
 .fa-facebook {
   background: transparent;
@@ -97,17 +89,41 @@ span {
   border: 1px #f2503e solid;
   border-radius: 4px;
 }
+.fa-facebook:hover {
+  color: white;
+  border: 1px white solid;
+  background-color: #f2503e;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 .fa-twitter {
   background: transparent;
   color: #f2503e;
   border: 1px #f2503e solid;
   border-radius: 4px;
 }
+.fa-twitter:hover {
+  color: white;
+  border: 1px white solid;
+  background-color: #f2503e;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 .fa-instagram {
   background: transparent;
   color: #f2503e;
   border: 1px #f2503e solid;
   border-radius: 4px;
+}
+.fa-instagram:hover {
+  color: white;
+  border: 1px white solid;
+  background-color: #f2503e;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 input[type="text"] {
@@ -154,6 +170,7 @@ ul {
   display: table;
   width: 100%;
   color: white;
+  text-align: Left;
 }
 .contact-list .fa {
   display: table-cell;

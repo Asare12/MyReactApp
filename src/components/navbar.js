@@ -6,7 +6,7 @@ import "../navbar.css";
 export default class MyNavbar extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <Navbar bg="light" variant="dark" expand="lg" fixed="top">
         <Navbar.Brand
           href="#home"
           className="custom-navbar-brand"

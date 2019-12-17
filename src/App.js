@@ -7,6 +7,7 @@ import Service from "./components/service";
 import Team from "./components/team";
 import Membership from "./components/membership";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <div className="contact">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

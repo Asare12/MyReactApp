@@ -25,9 +25,9 @@ export default class Contact extends React.Component {
           <Col md="4">
             <ul>
               <li>
-                <div class="contact-list">
-                  <i class="fa fa-map-marker"></i>
-                  <div class="contact-info">
+                <div className="contact-list">
+                  <i className="fa fa-map-marker"></i>
+                  <div className="contact-info">
                     <p>
                       Avenue Rd, Marshes Lower,
                       <br /> Dundalk, Co. Louth
@@ -36,25 +36,25 @@ export default class Contact extends React.Component {
                 </div>
               </li>
               <li>
-                <div class="contact-list">
-                  <i class="fa fa-phone"></i>
-                  <div class="contact-info">
+                <div className="contact-list">
+                  <i className="fa fa-phone"></i>
+                  <div className="contact-info">
                     <p>Phone: 042 98 76543</p>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="contact-list">
-                  <i class="fa fa-envelope"></i>
-                  <div class="contact-info">
+                <div className="contact-list">
+                  <i className="fa fa-envelope"></i>
+                  <div className="contact-info">
                     <p>info@ourgym.com</p>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="contact-list">
-                  <i class="fa fa-clock-o"></i>
-                  <div class="contact-info">
+                <div className="contact-list">
+                  <i className="fa fa-clock-o"></i>
+                  <div className="contact-info">
                     <p>
                       Monday-Friday: 7:30am-9:30pm
                       <br />
@@ -69,11 +69,11 @@ export default class Contact extends React.Component {
           <Col md="8" className="mb-5">
             <Form>
               <Form.Group>
-                <input type="text" class="form-control " placeholder="Name" />
+                <Form.Control type="text" placeholder="Name" />
               </Form.Group>
 
               <Form.Group>
-                <input type="email" class="form-control" placeholder="Email" />
+                <Form.Control type="email" placeholder="Email" />
               </Form.Group>
 
               <Form.Group>

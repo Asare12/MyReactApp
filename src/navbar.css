@@ -17,7 +17,10 @@
   margin-right: 3px;
   transition: all 0.1s;
 }
-.bg-dark {
+.custom-nav-link:hover {
+  color: #f2503e;
+}
+.bg-light {
   /* transition: all 0.6s; */
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
