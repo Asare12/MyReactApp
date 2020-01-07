@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/MyReactApp/static/css/main.1fc42976.chunk.css",
+    "main.js": "/MyReactApp/static/js/main.f4a377ee.chunk.js",
+    "main.js.map": "/MyReactApp/static/js/main.f4a377ee.chunk.js.map",
+    "runtime-main.js": "/MyReactApp/static/js/runtime-main.081e3a8e.js",
+    "runtime-main.js.map": "/MyReactApp/static/js/runtime-main.081e3a8e.js.map",
+    "static/js/2.0c8f28d6.chunk.js": "/MyReactApp/static/js/2.0c8f28d6.chunk.js",
+    "static/js/2.0c8f28d6.chunk.js.map": "/MyReactApp/static/js/2.0c8f28d6.chunk.js.map",
+    "index.html": "/MyReactApp/index.html",
+    "precache-manifest.589fb345623aa1b2372073ac6aea7ab3.js": "/MyReactApp/precache-manifest.589fb345623aa1b2372073ac6aea7ab3.js",
+    "service-worker.js": "/MyReactApp/service-worker.js",
+    "static/css/main.1fc42976.chunk.css.map": "/MyReactApp/static/css/main.1fc42976.chunk.css.map",
+    "static/js/2.0c8f28d6.chunk.js.LICENSE": "/MyReactApp/static/js/2.0c8f28d6.chunk.js.LICENSE",
+    "static/media/OurGymLogo.png": "/MyReactApp/static/media/OurGymLogo.9e21af78.png",
+    "static/media/App.css": "/MyReactApp/static/media/gym-background.96b52c73.jpg",
+    "static/media/bike-icon.png": "/MyReactApp/static/media/bike-icon.7c3a8d84.png",
+    "static/media/coach-1.jpg": "/MyReactApp/static/media/coach-1.39d695aa.jpg",
+    "static/media/coach-2.jpg": "/MyReactApp/static/media/coach-2.38635408.jpg",
+    "static/media/coach-3.jpg": "/MyReactApp/static/media/coach-3.1cee026d.jpg",
+    "static/media/health-icon.png": "/MyReactApp/static/media/health-icon.99f5c8fc.png",
+    "static/media/strength-icon.png": "/MyReactApp/static/media/strength-icon.9d41711e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.081e3a8e.js",
+    "static/js/2.0c8f28d6.chunk.js",
+    "static/css/main.1fc42976.chunk.css",
+    "static/js/main.f4a377ee.chunk.js"
+  ]
+}
