@@ -1,0 +1,18 @@
+.login-form {
+  padding: 5%;
+  background-color: #2b2b2b;
+  text-align: center;
+  color: white;
+}
+
+.form-border {
+  /* border: 2px solid white; */
+  border-radius: 30px;
+  margin: 0% 10% 0% 10%;
+  padding: 5% 0% 10% 0%;
+  box-shadow: 0px 0px 5px 2px white;
+}
+
+.login-btn-block {
+  width: 40%;
+}
