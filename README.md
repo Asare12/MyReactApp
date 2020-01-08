@@ -16,4 +16,4 @@ run npm start to start the service on localhost:3000
 * [React-Bootstrap](https://react-bootstrap.github.io/) - Front-End Framework used to build the look and feel
 
 ## Deployed App
- https://asare12.github.io/
+ https://asare12.github.io/MyReactApp
