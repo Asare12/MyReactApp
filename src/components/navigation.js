@@ -35,7 +35,7 @@ import { LinkContainer } from "react-router-bootstrap";
 //   }
 // `;
 
-export const Navigation = () => (
+export const Navigation = ({ props, isAuthenticated }) => (
   <Navbar bg="dark" variant="dark" expand="lg">
     <LinkContainer to="/">
       <Navbar.Brand className="custom-navbar-brand"></Navbar.Brand>
@@ -79,21 +79,31 @@ export const Navigation = () => (
         </LinkContainer>
       </Nav>
       <Nav className="ml-auto mt-2 mt-lg-0">
-        <LinkContainer to="/login">
-          <Nav.Item>
+        {isAuthenticated ? (
+          <Nav.Item onClick={() => props.userHasAuthenticated(false)}>
             <Nav.Link href="/" className="custom-nav-link">
-              Login
+              Logout
             </Nav.Link>
           </Nav.Item>
-        </LinkContainer>
+        ) : (
+          <>
+            <LinkContainer to="/login">
+              <Nav.Item>
+                <Nav.Link href="/" className="custom-nav-link">
+                  Login
+                </Nav.Link>
+              </Nav.Item>
+            </LinkContainer>
 
-        <LinkContainer to="/signUp">
-          <Nav.Item>
-            <Nav.Link href="/" className="custom-nav-link">
-              Register
-            </Nav.Link>
-          </Nav.Item>
-        </LinkContainer>
+            <LinkContainer to="/signUp">
+              <Nav.Item>
+                <Nav.Link href="/" className="custom-nav-link">
+                  Register
+                </Nav.Link>
+              </Nav.Item>
+            </LinkContainer>
+          </>
+        )}
       </Nav>
     </Navbar.Collapse>
   </Navbar>

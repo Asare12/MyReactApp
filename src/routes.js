@@ -5,14 +5,15 @@ import NotFound from "./components/NotFound";
 import Home from "./components/home";
 import About from "./components/aboutSection";
 import Contact from "./components/contactSection";
+import AppliedRoute from "./components/AppliedRoute";
 
-export default function Routes() {
+export default function Routes({ appProps }) {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/login" component={Login} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
+      <AppliedRoute exact path="/" component={Home} appProps={appProps} />
+      <AppliedRoute path="/login" component={Login} appProps={appProps} />
+      <AppliedRoute path="/about" component={About} appProps={appProps} />
+      <AppliedRoute path="/contact" component={Contact} appProps={appProps} />
       {/* <Redirect from="*" to="/" /> */}
       <Route component={NotFound} />
     </Switch>
