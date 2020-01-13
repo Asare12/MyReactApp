@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Login from "./components/login";
+import SignUp from "./components/signUp";
 import NotFound from "./components/NotFound";
 import Home from "./components/home";
 import About from "./components/aboutSection";
@@ -12,6 +13,7 @@ export default function Routes({ appProps }) {
     <Switch>
       <AppliedRoute exact path="/" component={Home} appProps={appProps} />
       <AppliedRoute path="/login" component={Login} appProps={appProps} />
+      <AppliedRoute path="/signUp" component={SignUp} appProps={appProps} />
       <AppliedRoute path="/about" component={About} appProps={appProps} />
       <AppliedRoute path="/contact" component={Contact} appProps={appProps} />
       {/* <Redirect from="*" to="/" /> */}

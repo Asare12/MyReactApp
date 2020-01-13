@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "../navbar.css";
 import { LinkContainer } from "react-router-bootstrap";
+import { Auth } from "aws-amplify";
 
 // import styled from "styled-components";
 
@@ -35,7 +36,14 @@ import { LinkContainer } from "react-router-bootstrap";
 //   }
 // `;
 
-export const Navigation = ({ props, isAuthenticated }) => (
+async function handleLogout(props) {
+  await Auth.signOut();
+
+  props.userHasAuthenticated(false);
+  props.history.push("/login");
+}
+
+export const Navigation = ({ isAuthenticated }) => (
   <Navbar bg="dark" variant="dark" expand="lg">
     <LinkContainer to="/">
       <Navbar.Brand className="custom-navbar-brand"></Navbar.Brand>
@@ -80,7 +88,7 @@ export const Navigation = ({ props, isAuthenticated }) => (
       </Nav>
       <Nav className="ml-auto mt-2 mt-lg-0">
         {isAuthenticated ? (
-          <Nav.Item onClick={() => props.userHasAuthenticated(false)}>
+          <Nav.Item onClick={handleLogout}>
             <Nav.Link href="/" className="custom-nav-link">
               Logout
             </Nav.Link>

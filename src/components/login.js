@@ -1,28 +1,31 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Form, Row, Col } from "react-bootstrap";
 import { Auth } from "aws-amplify";
-
+import LoaderButton from "../components/LoaderButton";
+import { useFormFields } from "../libs/hooksLib";
 import "../login.css";
 
 export default function Login(props) {
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
+  const [fields, handleFieldChange] = useFormFields({
+    email: "",
+    password: ""
+  });
+  const [isLoading, setIsLoading] = React.useState(false);
 
   function validateForm() {
-    return email.length > 0 && password.length > 0;
+    return fields.email.length > 0 && fields.password.length > 0;
   }
 
   async function handleSubmit(event) {
     event.preventDefault();
 
     try {
-      await Auth.signIn(email, password);
+      await Auth.signIn(fields.email, fields.password);
       props.userHasAuthenticated(true);
+      props.history.push("/");
     } catch (e) {
       alert(e.message);
+      setIsLoading(false);
     }
   }
   return (
@@ -38,28 +41,29 @@ export default function Login(props) {
                   autoFocus
                   type="email"
                   placeholder="Enter email address"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  value={fields.email}
+                  onChange={handleFieldChange}
                 />
               </Col>
             </Form.Group>
             <Form.Group as={Row} className="justify-content-md-center">
               <Col md={6}>
                 <Form.Control
-                  value={password}
-                  onChange={e => setPassword(e.target.value)}
+                  value={fields.password}
+                  onChange={handleFieldChange}
                   type="password"
                   placeholder="Enter password"
                 />
               </Col>
             </Form.Group>
-            <button
+            <LoaderButton
               type="submit"
               className="btn btn-danger btn-lg login-btn-block"
+              isLoading={isLoading}
               disabled={!validateForm()}
             >
               Login
-            </button>
+            </LoaderButton>
           </form>
         </div>
       </Container>
