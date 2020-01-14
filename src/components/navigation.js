@@ -5,37 +5,6 @@ import "../navbar.css";
 import { LinkContainer } from "react-router-bootstrap";
 import { Auth } from "aws-amplify";
 
-// import styled from "styled-components";
-
-// const Styles = styled.div`
-//   .navbar.navbar-no-bg {
-//     background: #444;
-//     background: rgba(0, 0, 0, 0.2);
-//   }
-//   .navbar-brand {
-//     width: 120px;
-//     height: 80px;
-//     background: url(${require("../images/OurGymLogo.png")}) no-repeat;
-//     background-size: 180px;
-//     background-position: left center;
-//   }
-//   .navbar-nav .nav-link {
-//     color: white !important;
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-weight: bold;
-//     font-size: 17px;
-//     padding-left: 25px !important;
-//     padding-right: 25px !important;
-//     margin-left: 3px;
-//     margin-right: 3px;
-//     transition: all 0.1s;
-
-//     &:hover {
-//       color: #f2503e !important;
-//     }
-//   }
-// `;
-
 async function handleLogout(props) {
   await Auth.signOut();
 
@@ -50,7 +19,6 @@ export const Navigation = ({ isAuthenticated }) => (
     </LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      {/* ml-auto mt-2 mt-lg-0  */}
       <Nav className="custom-navbar-nav">
         <LinkContainer to="/">
           <Nav.Item>

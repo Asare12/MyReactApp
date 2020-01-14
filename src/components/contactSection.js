@@ -4,8 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 
-export default class Contact extends React.Component {
-  render() {
+export default function Contact() {
     return (
       <div className="contact">
       <Container>
@@ -99,4 +98,4 @@ export default class Contact extends React.Component {
       </div>
     );
   }
-}
+

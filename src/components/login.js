@@ -1,7 +1,10 @@
 import React from "react";
-import { Container, Form, Row, Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import { Auth } from "aws-amplify";
-import LoaderButton from "../components/LoaderButton";
 import { useFormFields } from "../libs/hooksLib";
 import "../login.css";
 
@@ -10,7 +13,6 @@ export default function Login(props) {
     email: "",
     password: ""
   });
-  const [isLoading, setIsLoading] = React.useState(false);
 
   function validateForm() {
     return fields.email.length > 0 && fields.password.length > 0;
@@ -25,7 +27,6 @@ export default function Login(props) {
       props.history.push("/");
     } catch (e) {
       alert(e.message);
-      setIsLoading(false);
     }
   }
   return (
@@ -35,7 +36,11 @@ export default function Login(props) {
           <h2 className="mb-5">Login</h2>
 
           <form onSubmit={handleSubmit}>
-            <Form.Group as={Row} className="justify-content-md-center">
+            <Form.Group
+              as={Row}
+              className="justify-content-md-center"
+              controlId="email"
+            >
               <Col md={6}>
                 <Form.Control
                   autoFocus
@@ -46,24 +51,32 @@ export default function Login(props) {
                 />
               </Col>
             </Form.Group>
-            <Form.Group as={Row} className="justify-content-md-center">
+            <Form.Group
+              as={Row}
+              className="justify-content-md-center"
+              controlId="password"
+            >
               <Col md={6}>
                 <Form.Control
-                  value={fields.password}
-                  onChange={handleFieldChange}
                   type="password"
                   placeholder="Enter password"
+                  value={fields.password}
+                  onChange={handleFieldChange}
                 />
               </Col>
             </Form.Group>
-            <LoaderButton
-              type="submit"
-              className="btn btn-danger btn-lg login-btn-block"
-              isLoading={isLoading}
-              disabled={!validateForm()}
-            >
-              Login
-            </LoaderButton>
+            <Form.Group as={Row} className="justify-content-md-center">
+              <Button
+                block
+                size="lg"
+                variant="danger"
+                type="submit"
+                className="login-btn-block"
+                disabled={!validateForm()}
+              >
+                Login
+              </Button>
+            </Form.Group>
           </form>
         </div>
       </Container>

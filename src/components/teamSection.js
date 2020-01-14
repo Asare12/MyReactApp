@@ -6,8 +6,7 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Image from "react-bootstrap/Image";
 
-export default class Team extends React.Component {
-  render() {
+export default function Team() {
     const blackColor = { color: "black" };
     return (
       <div className="team">
@@ -104,4 +103,4 @@ export default class Team extends React.Component {
       </div>
     );
   }
-}
+

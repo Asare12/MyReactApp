@@ -53,7 +53,7 @@ export default class Service extends React.Component {
               style={{ height: "70px", width: "70px" }}
             />
             <h5>Health & Diet</h5>
-            <hr class="divider-x" />
+            <hr classNane="divider-x" />
             <p>
               Our trainers will provide you with the best nutritional advice
               that will help you with your journey to live a better and

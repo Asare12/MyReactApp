@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 
 const H1 = { fontSize: "110px", fontWeight: "bold" };
@@ -14,9 +15,9 @@ export const TopContent = () => (
         Motivation is what gets you started. Habit is what keeps you going.
       </p>
       <LinkContainer to="/signUp">
-        <button type="button" className="btn btn-outline-light btn-lg">
+        <Button size="lg" variant="outline-light" type="button">
           JOIN US TODAY
-        </button>
+        </Button>
       </LinkContainer>
     </Col>
   </Row>

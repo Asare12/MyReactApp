@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Container, Form, Row, Col } from "react-bootstrap";
-import LoaderButton from "./LoaderButton";
+import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import { useFormFields } from "../libs/hooksLib";
-// import "./Signup.css";
 import "../login.css";
 import { Auth } from "aws-amplify";
 
@@ -14,7 +12,6 @@ export default function SignUp(props) {
     confirmationCode: ""
   });
   const [newUser, setNewUser] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
 
   function validateForm() {
     return (
@@ -24,32 +21,28 @@ export default function SignUp(props) {
     );
   }
 
-  // function validateConfirmationForm() {
-  //   return fields.confirmationCode.length > 0;
-  // }
+  function validateConfirmationForm() {
+    return fields.confirmationCode.length > 0;
+  }
 
   async function handleSubmit(event) {
     event.preventDefault();
-
-    setIsLoading(true);
 
     try {
       const newUser = await Auth.signUp({
         username: fields.email,
         password: fields.password
       });
-      setIsLoading(false);
+      
       setNewUser(newUser);
     } catch (e) {
       alert(e.message);
-      setIsLoading(false);
+      
     }
   }
 
   async function handleConfirmationSubmit(event) {
     event.preventDefault();
-
-    setIsLoading(true);
 
     try {
       await Auth.confirmSignUp(fields.email, fields.confirmationCode);
@@ -59,7 +52,7 @@ export default function SignUp(props) {
       props.history.push("/");
     } catch (e) {
       alert(e.message);
-      setIsLoading(false);
+      
     }
   }
 
@@ -87,14 +80,21 @@ export default function SignUp(props) {
                 </Form.Control.Feedback>
               </Col>
             </Form.Group>
-            <LoaderButton
+            <Form.Group
+              as={Row}
+              className="justify-content-md-center"
+            >
+            <Button
+              block
+              size="lg"
+              variant="danger"
               type="submit"
-              className="btn btn-danger btn-lg login-btn-block"
-              isLoading={isLoading}
-              disabled={!validateForm()}
+              className="login-btn-block"
+              disabled={!validateConfirmationForm()}
             >
               Verify
-            </LoaderButton>
+            </Button>
+            </Form.Group>
           </form>
         </div>
       </Container>
@@ -111,7 +111,6 @@ export default function SignUp(props) {
               as={Row}
               className="justify-content-md-center"
               controlId="email"
-              bsSize="large"
             >
               <Col md={6}>
                 <Form.Control
@@ -127,7 +126,6 @@ export default function SignUp(props) {
               as={Row}
               className="justify-content-md-center"
               controlId="password"
-              bsSize="large"
             >
               <Col md={6}>
                 <Form.Control
@@ -142,7 +140,6 @@ export default function SignUp(props) {
               as={Row}
               className="justify-content-md-center"
               controlId="confirmPassword"
-              bsSize="large"
             >
               <Col md={6}>
                 <Form.Control
@@ -153,14 +150,21 @@ export default function SignUp(props) {
                 />
               </Col>
             </Form.Group>
-            <LoaderButton
+            <Form.Group
+              as={Row}
+              className="justify-content-md-center"
+            >
+            <Button
+              block
+              size="lg"
+              variant="danger"
               type="submit"
-              className="btn btn-danger btn-lg login-btn-block"
-              isLoading={isLoading}
+              className="login-btn-block"
               disabled={!validateForm()}
             >
-              Signup
-            </LoaderButton>
+              SignUp
+            </Button>
+            </Form.Group>
           </form>
         </div>
       </Container>
