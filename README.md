@@ -14,7 +14,7 @@ run npm start to start the service on localhost:3000
 
 * [React](https://reactjs.org/)  - JavaScript library used to build my user interface
 * [React-Bootstrap](https://react-bootstrap.github.io/) - Front-End Framework used to build the look and feel
-* [AWS-Service Amazon Cognito](https://aws.amazon.com/cognito/) - Amazon Cognito used for simple and secure Login & Sign Up
+* [AWS-Service Amazon Cognito](https://aws.amazon.com/cognito/) - Amazon Cognito used for simple and secure user Login & Sign Ups
 
 ## Deployed App
  https://asare12.github.io/MyReactApp
