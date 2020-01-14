@@ -17,4 +17,4 @@ run npm start to start the service on localhost:3000
 * [AWS-Service Amazon Cognito](https://aws.amazon.com/cognito/) - Amazon Cognito used for simple and secure user Login & Sign Ups
 
 ## Deployed App
- https://asare12.github.io/MyReactApp
+ https://asare12.github.io/
