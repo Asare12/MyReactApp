@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MyReactApp/static/css/main.5be05244.chunk.css",
-    "main.js": "/MyReactApp/static/js/main.a39ded9c.chunk.js",
-    "main.js.map": "/MyReactApp/static/js/main.a39ded9c.chunk.js.map",
+    "main.css": "/MyReactApp/static/css/main.34da43a1.chunk.css",
+    "main.js": "/MyReactApp/static/js/main.6254f7ec.chunk.js",
+    "main.js.map": "/MyReactApp/static/js/main.6254f7ec.chunk.js.map",
     "runtime-main.js": "/MyReactApp/static/js/runtime-main.081e3a8e.js",
     "runtime-main.js.map": "/MyReactApp/static/js/runtime-main.081e3a8e.js.map",
-    "static/js/2.4cf4c209.chunk.js": "/MyReactApp/static/js/2.4cf4c209.chunk.js",
-    "static/js/2.4cf4c209.chunk.js.map": "/MyReactApp/static/js/2.4cf4c209.chunk.js.map",
+    "static/js/2.56ea4049.chunk.js": "/MyReactApp/static/js/2.56ea4049.chunk.js",
+    "static/js/2.56ea4049.chunk.js.map": "/MyReactApp/static/js/2.56ea4049.chunk.js.map",
     "index.html": "/MyReactApp/index.html",
-    "precache-manifest.4ba9ff25147c2a6ebad9292cd26ef9ca.js": "/MyReactApp/precache-manifest.4ba9ff25147c2a6ebad9292cd26ef9ca.js",
+    "precache-manifest.acf0384895e417b4334c3167634368d3.js": "/MyReactApp/precache-manifest.acf0384895e417b4334c3167634368d3.js",
     "service-worker.js": "/MyReactApp/service-worker.js",
-    "static/css/main.5be05244.chunk.css.map": "/MyReactApp/static/css/main.5be05244.chunk.css.map",
-    "static/js/2.4cf4c209.chunk.js.LICENSE": "/MyReactApp/static/js/2.4cf4c209.chunk.js.LICENSE",
+    "static/css/main.34da43a1.chunk.css.map": "/MyReactApp/static/css/main.34da43a1.chunk.css.map",
+    "static/js/2.56ea4049.chunk.js.LICENSE": "/MyReactApp/static/js/2.56ea4049.chunk.js.LICENSE",
     "static/media/OurGymLogo.png": "/MyReactApp/static/media/OurGymLogo.9e21af78.png",
     "static/media/home.css": "/MyReactApp/static/media/gym-background.96b52c73.jpg",
     "static/media/bike-icon.png": "/MyReactApp/static/media/bike-icon.7c3a8d84.png",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.081e3a8e.js",
-    "static/js/2.4cf4c209.chunk.js",
-    "static/css/main.5be05244.chunk.css",
-    "static/js/main.a39ded9c.chunk.js"
+    "static/js/2.56ea4049.chunk.js",
+    "static/css/main.34da43a1.chunk.css",
+    "static/js/main.6254f7ec.chunk.js"
   ]
 }
