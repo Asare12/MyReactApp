@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Auth } from "aws-amplify";
 import { useFormFields } from "../libs/hooksLib";
-import "../login.css";
+import "./componentsCSS/login.css";
 
 export default function Login(props) {
   const [fields, handleFieldChange] = useFormFields({

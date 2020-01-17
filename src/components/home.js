@@ -5,7 +5,7 @@ import ServiceSection from "./serviceSection";
 import TeamSection from "./teamSection";
 import MembershipSection from "./membershipSection";
 import ContactSection from "./contactSection";
-import "../home.css";
+import "../componentsCSS/home.css";
 
 export default class Home extends React.Component {
   render() {
@@ -17,11 +17,8 @@ export default class Home extends React.Component {
           </header>
           <AboutSection />
           <ServiceSection />
-
           <TeamSection />
-
           <MembershipSection />
-
           <ContactSection />
         </div>
       </React.Fragment>

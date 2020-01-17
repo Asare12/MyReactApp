@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import "../navbar.css";
+import "../componentsCSS/navbar.css";
 import { LinkContainer } from "react-router-bootstrap";
 import { Auth } from "aws-amplify";
 

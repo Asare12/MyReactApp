@@ -33,7 +33,6 @@ function App() {
       <React.Fragment>
         <Navigation isAuthenticated={isAuthenticated} />
         <Routes appProps={{ isAuthenticated, userHasAuthenticated }} />
-        <Layout></Layout>
         <Footer />
       </React.Fragment>
     )
