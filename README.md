@@ -1,5 +1,5 @@
 # MyReactApp
-Our Gym is a one page responsive designed specially for gym and fitness. It is designed in a minimalist black and red style it offers awesome simple design, powerful display.
+Our Gym is a simple application with a responsive design specially for gym and fitness users the application allows you to login and register using aws cognito. It is designed in a minimalist black and red style it offers awesome simple design, powerful display.
 
 ### Prerequisites
 ```
